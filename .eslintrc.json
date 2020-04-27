@@ -1,0 +1,25 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": ["react", "jsx-a11y", "import"],
+  "extends": "airbnb",
+  "rules": {
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "global-require": "off",
+    "import/prefer-default-export": "off",
+    "object-curly-spacing": [2, "never"],
+    "comma-spacing": [2, {"before": false, "after": false}],
+    "react/prefer-stateless-function": [2, {"ignorePureComponents": true}],
+    "no-unused-expressions": ["error", {"allowTaggedTemplates": true}],
+    "linebreak-style": 0,
+    "react-native/no-inline-styles": 2
+  }
+}
