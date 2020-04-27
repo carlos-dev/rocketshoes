@@ -3,13 +3,12 @@ import {createGlobalStyle} from 'styled-components';
 import background from '../assets/images/background.svg';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Puritan&display=swap');
-
   * {
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: 'Puritan', sans-serif;
   }
 
   body {
@@ -18,7 +17,7 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font-size: 14px 'Puritan', sans-serif;
+    font: 14px 'Puritan', sans-serif;
   }
 
   #root {
