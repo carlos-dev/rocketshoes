@@ -57,12 +57,12 @@ export const ProductList = styled.ul`
       svg {
         margin-right: 5px;
       }
-    }
 
-    span {
-      flex: 1;
-      text-align: center;
-      font-weight: bold;
+      span {
+        flex: 1;
+        text-align: center;
+        font-weight: bold;
+      }
     }
   }
 `;
