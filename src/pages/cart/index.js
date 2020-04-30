@@ -13,7 +13,7 @@ import * as CartActions from '../../store/module/cart/actions';
 
 import {Container, ProductTable, Total} from './styles';
 
-function Cart({cart, removeFromCart, updateAmount}) {
+function Cart({cart, removeFromCart, updateAmount, total}) {
   function increment(product) {
     updateAmount(product.id, product.amount + 1);
   }
@@ -76,7 +76,7 @@ function Cart({cart, removeFromCart, updateAmount}) {
 
         <Total>
           <span>total:</span>
-          <strong>R$1920,28</strong>
+          <strong>{total}</strong>
         </Total>
       </footer>
     </Container>
